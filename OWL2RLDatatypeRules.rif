@@ -1,0 +1,3887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Document [
+  <!ENTITY rif  "http://www.w3.org/2007/rif#">
+  <!ENTITY xs   "http://www.w3.org/2001/XMLSchema#">
+  <!ENTITY rdf  "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+]>
+
+<Document xmlns="&rif;">
+  <payload>
+    <Group>
+      <sentence>
+        <Group>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-PlainLiteral</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-XMLLiteral</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-decimal</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#decimal</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-integer</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#integer</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-nonNegativeInteger</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#nonNegativeInteger</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-nonPositiveInteger</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#nonPositiveInteger</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-positiveInteger</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#positiveInteger</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-negativeInteger</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#negativeInteger</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-long</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#long</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-int</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#int</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-short</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#short</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-byte</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#byte</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-unsignedLong</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#unsignedLong</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-unsignedInt</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#unsignedInt</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-unsignedShort</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#unsignedShort</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-unsignedByte</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#unsignedByte</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-float</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#float</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-double</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#double</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-string</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#string</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-normalizedString</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#normalizedString</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-token</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#token</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-language</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#language</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-Name</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#Name</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-NCName</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#NCName</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-NMTOKEN</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#NMTOKEN</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-boolean</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#boolean</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-hexBinary</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#hexBinary</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-base64Binary</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#base64Binary</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-anyURI</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#anyURI</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-dateTime</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#dateTime</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>s</Var>
+              </declare>
+              <declare>
+                <Var>p</Var>
+              </declare>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>s</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Var>p</Var>
+                            <Var>lt</Var>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-dateTimeStamp</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Frame>
+                      <object>
+                        <Var>lt</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#dateTimeStamp</Const>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+                      </slot>
+                    </Frame>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+        </Group>
+      </sentence>
+      <sentence>
+        <Group>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-PlainLiteral</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-XMLLiteral</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#decimal</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-decimal</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#integer</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-integer</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#nonNegativeInteger</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-nonNegativeInteger</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#nonPositiveInteger</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-nonPositiveInteger</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#positiveInteger</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-positiveInteger</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#negativeInteger</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-negativeInteger</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#long</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-long</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#int</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-int</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#short</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-short</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#byte</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-byte</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#unsignedLong</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-unsignedLong</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#unsignedInt</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-unsignedInt</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#unsignedShort</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-unsignedShort</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#unsignedByte</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-unsignedByte</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#float</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-float</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#double</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-double</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#string</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-string</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#normalizedString</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-normalizedString</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#token</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-token</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#language</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-language</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#Name</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-Name</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#NCName</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-NCName</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#NMTOKEN</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-NMTOKEN</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#boolean</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-boolean</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#hexBinary</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-hexBinary</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#base64Binary</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-base64Binary</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#anyURI</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-anyURI</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#dateTime</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-dateTime</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+          <sentence>
+            <Forall>
+              <declare>
+                <Var>lt</Var>
+              </declare>
+              <formula>
+                <Implies>
+                  <if>
+                    <And>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>lt</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#dateTimeStamp</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                      <formula>
+                        <External>
+                         <content>
+                          <Atom>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#is-literal-not-dateTimeStamp</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>lt</Var>
+                                </args>
+                          </Atom>
+                         </content>
+                        </External>
+                      </formula>
+                    </And>
+                  </if>
+                  <then>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                      </op>
+                    </Atom>
+                  </then>
+                </Implies>
+              </formula>
+            </Forall>
+          </sentence>
+        </Group>
+      </sentence>
+      <sentence>
+        <Forall>
+          <declare>
+            <Var>x</Var>
+          </declare>
+          <declare>
+            <Var>y</Var>
+          </declare>
+          <declare>
+            <Var>s1</Var>
+          </declare>
+          <declare>
+            <Var>s2</Var>
+          </declare>
+          <declare>
+            <Var>p1</Var>
+          </declare>
+          <declare>
+            <Var>p2</Var>
+          </declare>
+          <formula>
+            <Implies>
+              <if>
+                <And>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>s1</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Var>p1</Var>
+                        <Var>x</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>s2</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Var>p2</Var>
+                        <Var>y</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>x</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/2002/07/owl#sameAs</Const>
+                        <Var>y</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <External>
+                     <content>
+                      <Atom>
+                          <op>
+                            <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#literal-not-identical</Const>
+                          </op>
+                            <args ordered="yes">
+                              <Var>x</Var>
+                              <Var>y</Var>
+                            </args>
+                      </Atom>
+                     </content>
+                    </External>
+                  </formula>
+                </And>
+              </if>
+              <then>
+                <Atom>
+                  <op>
+                    <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                  </op>
+                </Atom>
+              </then>
+            </Implies>
+          </formula>
+        </Forall>
+      </sentence>
+      <sentence>
+        <Forall>
+          <declare>
+            <Var>x</Var>
+          </declare>
+          <declare>
+            <Var>y</Var>
+          </declare>
+          <declare>
+            <Var>s1</Var>
+          </declare>
+          <declare>
+            <Var>s2</Var>
+          </declare>
+          <declare>
+            <Var>p1</Var>
+          </declare>
+          <declare>
+            <Var>p2</Var>
+          </declare>
+          <formula>
+            <Implies>
+              <if>
+                <And>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>s1</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Var>p1</Var>
+                        <Var>x</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>s2</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Var>p2</Var>
+                        <Var>y</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <Equal>
+                      <left>
+                        <Var>x</Var>
+                      </left>
+                      <right>
+                        <Var>y</Var>
+                      </right>
+                    </Equal>
+                  </formula>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>x</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/2002/07/owl#differentFrom</Const>
+                        <Var>y</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                </And>
+              </if>
+              <then>
+                <Atom>
+                  <op>
+                    <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                  </op>
+                </Atom>
+              </then>
+            </Implies>
+          </formula>
+        </Forall>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#decimal</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#integer</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#double</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#string</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#dateTime</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Literal</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#nonNegativeInteger</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#nonPositiveInteger</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#positiveInteger</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#negativeInteger</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#long</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#int</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#short</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#byte</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#unsignedLong</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#unsignedInt</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#unsignedShort</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#unsignedByte</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#normalizedString</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#token</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#language</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#Name</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#NCName</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#NMTOKEN</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#float</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#boolean</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#hexBinary</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#base64Binary</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#anyURI</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+      <sentence>
+        <Frame>
+          <object>
+            <Const type="&rif;iri">http://www.w3.org/2001/XMLSchema#dateTimeStamp</Const>
+          </object>
+          <slot ordered="yes">
+            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+            <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#Datatype</Const>
+          </slot>
+        </Frame>
+      </sentence>
+    </Group>
+  </payload>
+</Document>

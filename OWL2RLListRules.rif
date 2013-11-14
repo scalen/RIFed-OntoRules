@@ -1,0 +1,1656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Document [
+  <!ENTITY rif  "http://www.w3.org/2007/rif#">
+  <!ENTITY xs   "http://www.w3.org/2001/XMLSchema#">
+  <!ENTITY rdf  "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+]>
+
+<Document xmlns="&rif;">
+  <payload>
+    <Group>
+      <sentence>
+        <Forall>
+          <declare>
+            <Var>x</Var>
+          </declare>
+          <declare>
+            <Var>y</Var>
+          </declare>
+          <declare>
+            <Var>z1</Var>
+          </declare>
+          <declare>
+            <Var>z2</Var>
+          </declare>
+          <declare>
+            <Var>iz1</Var>
+          </declare>
+          <declare>
+            <Var>iz2</Var>
+          </declare>
+          <formula>
+            <Implies>
+              <if>
+                <And>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>x</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2002/07/owl#AllDifferent</Const>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>x</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/2002/07/owl#members</Const>
+                        <Var>y</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <External>
+                     <content>
+                      <Atom>
+                          <op>
+                            <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#list-contains</Const>
+                          </op>
+                            <args ordered="yes">
+                              <Var>y</Var>
+                              <Var>z1</Var>
+                            </args>
+                      </Atom>
+                     </content>
+                    </External>
+                  </formula>
+                  <formula>
+                    <Equal>
+                      <left>
+                        <Var>iz1</Var>
+                      </left>
+                      <right>
+                        <External>
+                         <content>
+                          <Expr>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-function#index-of</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>y</Var>
+                                  <Var>z1</Var>
+                                </args>
+                          </Expr>
+                         </content>
+                        </External>
+                      </right>
+                    </Equal>
+                  </formula>
+                  <formula>
+                    <External>
+                     <content>
+                      <Atom>
+                          <op>
+                            <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#list-contains</Const>
+                          </op>
+                            <args ordered="yes">
+                              <Var>y</Var>
+                              <Var>z2</Var>
+                            </args>
+                      </Atom>
+                     </content>
+                    </External>
+                  </formula>
+                  <formula>
+                    <Equal>
+                      <left>
+                        <Var>iz2</Var>
+                      </left>
+                      <right>
+                        <External>
+                         <content>
+                          <Expr>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-function#index-of</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>y</Var>
+                                  <Var>z2</Var>
+                                </args>
+                          </Expr>
+                         </content>
+                        </External>
+                      </right>
+                    </Equal>
+                  </formula>
+                  <formula>
+                    <External>
+                     <content>
+                      <Atom>
+                          <op>
+                            <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#numeric-not-equal</Const>
+                          </op>
+                            <args ordered="yes">
+                              <Var>iz1</Var>
+                              <Var>iz2</Var>
+                            </args>
+                      </Atom>
+                     </content>
+                    </External>
+                  </formula>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>z1</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/2002/07/owl#sameAs</Const>
+                        <Var>z2</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                </And>
+              </if>
+              <then>
+                <Atom>
+                  <op>
+                    <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                  </op>
+                </Atom>
+              </then>
+            </Implies>
+          </formula>
+        </Forall>
+      </sentence>
+      <sentence>
+        <Forall>
+          <declare>
+            <Var>x</Var>
+          </declare>
+          <declare>
+            <Var>y</Var>
+          </declare>
+          <declare>
+            <Var>z1</Var>
+          </declare>
+          <declare>
+            <Var>z2</Var>
+          </declare>
+          <declare>
+            <Var>iz1</Var>
+          </declare>
+          <declare>
+            <Var>iz2</Var>
+          </declare>
+          <formula>
+            <Implies>
+              <if>
+                <And>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>x</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2002/07/owl#AllDifferent</Const>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>x</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/2002/07/owl#distinctMembers</Const>
+                        <Var>y</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <External>
+                     <content>
+                      <Atom>
+                          <op>
+                            <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#list-contains</Const>
+                          </op>
+                            <args ordered="yes">
+                              <Var>y</Var>
+                              <Var>z1</Var>
+                            </args>
+                      </Atom>
+                     </content>
+                    </External>
+                  </formula>
+                  <formula>
+                    <Equal>
+                      <left>
+                        <Var>iz1</Var>
+                      </left>
+                      <right>
+                        <External>
+                         <content>
+                          <Expr>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-function#index-of</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>y</Var>
+                                  <Var>z1</Var>
+                                </args>
+                          </Expr>
+                         </content>
+                        </External>
+                      </right>
+                    </Equal>
+                  </formula>
+                  <formula>
+                    <External>
+                     <content>
+                      <Atom>
+                          <op>
+                            <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#list-contains</Const>
+                          </op>
+                            <args ordered="yes">
+                              <Var>y</Var>
+                              <Var>z2</Var>
+                            </args>
+                      </Atom>
+                     </content>
+                    </External>
+                  </formula>
+                  <formula>
+                    <Equal>
+                      <left>
+                        <Var>iz2</Var>
+                      </left>
+                      <right>
+                        <External>
+                         <content>
+                          <Expr>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-function#index-of</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>y</Var>
+                                  <Var>z2</Var>
+                                </args>
+                          </Expr>
+                         </content>
+                        </External>
+                      </right>
+                    </Equal>
+                  </formula>
+                  <formula>
+                    <External>
+                     <content>
+                      <Atom>
+                          <op>
+                            <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#numeric-not-equal</Const>
+                          </op>
+                            <args ordered="yes">
+                              <Var>iz1</Var>
+                              <Var>iz2</Var>
+                            </args>
+                      </Atom>
+                     </content>
+                    </External>
+                  </formula>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>z1</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/2002/07/owl#sameAs</Const>
+                        <Var>z2</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                </And>
+              </if>
+              <then>
+                <Atom>
+                  <op>
+                    <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                  </op>
+                </Atom>
+              </then>
+            </Implies>
+          </formula>
+        </Forall>
+      </sentence>
+      <sentence>
+        <Forall>
+          <declare>
+            <Var>x</Var>
+          </declare>
+          <declare>
+            <Var>y</Var>
+          </declare>
+          <declare>
+            <Var>o</Var>
+          </declare>
+          <declare>
+            <Var>v</Var>
+          </declare>
+          <declare>
+            <Var>l</Var>
+          </declare>
+          <declare>
+            <Var>ix</Var>
+          </declare>
+          <declare>
+            <Var>iy</Var>
+          </declare>
+          <declare>
+            <Var>r</Var>
+          </declare>
+          <formula>
+            <Implies>
+              <if>
+                <And>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>r</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2002/07/owl#AllDisjointProperties</Const>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>r</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/2002/07/owl#members</Const>
+                        <Var>l</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <External>
+                     <content>
+                      <Atom>
+                          <op>
+                            <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#list-contains</Const>
+                          </op>
+                            <args ordered="yes">
+                              <Var>l</Var>
+                              <Var>x</Var>
+                            </args>
+                      </Atom>
+                     </content>
+                    </External>
+                  </formula>
+                  <formula>
+                    <Equal>
+                      <left>
+                        <Var>ix</Var>
+                      </left>
+                      <right>
+                        <External>
+                         <content>
+                          <Expr>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-function#index-of</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>l</Var>
+                                  <Var>x</Var>
+                                </args>
+                          </Expr>
+                         </content>
+                        </External>
+                      </right>
+                    </Equal>
+                  </formula>
+                  <formula>
+                    <External>
+                     <content>
+                      <Atom>
+                          <op>
+                            <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#list-contains</Const>
+                          </op>
+                            <args ordered="yes">
+                              <Var>l</Var>
+                              <Var>y</Var>
+                            </args>
+                      </Atom>
+                     </content>
+                    </External>
+                  </formula>
+                  <formula>
+                    <Equal>
+                      <left>
+                        <Var>iy</Var>
+                      </left>
+                      <right>
+                        <External>
+                         <content>
+                          <Expr>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-function#index-of</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>l</Var>
+                                  <Var>y</Var>
+                                </args>
+                          </Expr>
+                         </content>
+                        </External>
+                      </right>
+                    </Equal>
+                  </formula>
+                  <formula>
+                    <External>
+                     <content>
+                      <Atom>
+                          <op>
+                            <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#numeric-not-equal</Const>
+                          </op>
+                            <args ordered="yes">
+                              <Var>ix</Var>
+                              <Var>iy</Var>
+                            </args>
+                      </Atom>
+                     </content>
+                    </External>
+                  </formula>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>o</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Var>x</Var>
+                        <Var>v</Var>
+                      </slot>
+                      <slot ordered="yes">
+                        <Var>y</Var>
+                        <Var>v</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                </And>
+              </if>
+              <then>
+                <Atom>
+                  <op>
+                    <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                  </op>
+                </Atom>
+              </then>
+            </Implies>
+          </formula>
+        </Forall>
+      </sentence>
+      <sentence>
+        <Forall>
+          <declare>
+            <Var>x</Var>
+          </declare>
+          <declare>
+            <Var>y</Var>
+          </declare>
+          <declare>
+            <Var>o</Var>
+          </declare>
+          <declare>
+            <Var>l</Var>
+          </declare>
+          <declare>
+            <Var>ix</Var>
+          </declare>
+          <declare>
+            <Var>iy</Var>
+          </declare>
+          <declare>
+            <Var>r</Var>
+          </declare>
+          <formula>
+            <Implies>
+              <if>
+                <And>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>r</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Const type="&rif;iri">http://www.w3.org/2002/07/owl#AllDisjointClasses</Const>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>r</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/2002/07/owl#members</Const>
+                        <Var>l</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <External>
+                     <content>
+                      <Atom>
+                          <op>
+                            <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#list-contains</Const>
+                          </op>
+                            <args ordered="yes">
+                              <Var>l</Var>
+                              <Var>x</Var>
+                            </args>
+                      </Atom>
+                     </content>
+                    </External>
+                  </formula>
+                  <formula>
+                    <Equal>
+                      <left>
+                        <Var>ix</Var>
+                      </left>
+                      <right>
+                        <External>
+                         <content>
+                          <Expr>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-function#index-of</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>l</Var>
+                                  <Var>x</Var>
+                                </args>
+                          </Expr>
+                         </content>
+                        </External>
+                      </right>
+                    </Equal>
+                  </formula>
+                  <formula>
+                    <External>
+                     <content>
+                      <Atom>
+                          <op>
+                            <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#list-contains</Const>
+                          </op>
+                            <args ordered="yes">
+                              <Var>l</Var>
+                              <Var>y</Var>
+                            </args>
+                      </Atom>
+                     </content>
+                    </External>
+                  </formula>
+                  <formula>
+                    <Equal>
+                      <left>
+                        <Var>iy</Var>
+                      </left>
+                      <right>
+                        <External>
+                         <content>
+                          <Expr>
+                              <op>
+                                <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-function#index-of</Const>
+                              </op>
+                                <args ordered="yes">
+                                  <Var>l</Var>
+                                  <Var>y</Var>
+                                </args>
+                          </Expr>
+                         </content>
+                        </External>
+                      </right>
+                    </Equal>
+                  </formula>
+                  <formula>
+                    <External>
+                     <content>
+                      <Atom>
+                          <op>
+                            <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#numeric-not-equal</Const>
+                          </op>
+                            <args ordered="yes">
+                              <Var>ix</Var>
+                              <Var>iy</Var>
+                            </args>
+                      </Atom>
+                     </content>
+                    </External>
+                  </formula>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>o</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Var>x</Var>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Var>y</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                </And>
+              </if>
+              <then>
+                <Atom>
+                  <op>
+                    <Const type="&rif;iri">http://www.w3.org/2007/rif#error</Const>
+                  </op>
+                </Atom>
+              </then>
+            </Implies>
+          </formula>
+        </Forall>
+      </sentence>
+      <sentence>
+        <Forall>
+          <declare>
+            <Var>p</Var>
+          </declare>
+          <declare>
+            <Var>last</Var>
+          </declare>
+          <declare>
+            <Var>pc</Var>
+          </declare>
+          <declare>
+            <Var>start</Var>
+          </declare>
+          <formula>
+            <Implies>
+              <if>
+                <And>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>p</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/2002/07/owl#propertyChainAxiom</Const>
+                        <Var>pc</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;local">checkChain</Const>
+                      </op>
+                        <args ordered="yes">
+                          <Var>start</Var>
+                          <Var>pc</Var>
+                          <Var>last</Var>
+                        </args>
+                    </Atom>
+                  </formula>
+                </And>
+              </if>
+              <then>
+                <Frame>
+                  <object>
+                    <Var>start</Var>
+                  </object>
+                  <slot ordered="yes">
+                    <Var>p</Var>
+                    <Var>last</Var>
+                  </slot>
+                </Frame>
+              </then>
+            </Implies>
+          </formula>
+        </Forall>
+      </sentence>
+      <sentence>
+        <Forall>
+          <declare>
+            <Var>start</Var>
+          </declare>
+          <declare>
+            <Var>pc</Var>
+          </declare>
+          <declare>
+            <Var>last</Var>
+          </declare>
+          <declare>
+            <Var>p</Var>
+          </declare>
+          <declare>
+            <Var>tl</Var>
+          </declare>
+          <formula>
+            <Implies>
+              <if>
+                <And>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>pc</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#first</Const>
+                        <Var>p</Var>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</Const>
+                        <Var>tl</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <Exists>
+                      <declare>
+                        <Var>next</Var>
+                      </declare>
+                      <formula>
+                        <And>
+                          <formula>
+                            <Frame>
+                              <object>
+                                 <Var>start</Var>
+                              </object>
+                              <slot ordered="yes">
+                                <Var>p</Var>
+                                <Var>next</Var>
+                              </slot>
+                            </Frame>
+                          </formula>
+                          <formula>
+                            <Atom>
+                              <op>
+                                <Const type="&rif;local">checkChain</Const>
+                              </op>
+                              <args ordered="yes">
+                                <Var>next</Var>
+                                <Var>tl</Var>
+                                <Var>last</Var>
+                              </args>
+                            </Atom>
+                          </formula>
+                        </And>
+                      </formula>
+                    </Exists>
+                  </formula>
+                </And>
+              </if>
+              <then>
+                <Atom>
+                  <op>
+                    <Const type="&rif;local">checkChain</Const>
+                  </op>
+                    <args ordered="yes">
+                      <Var>start</Var>
+                      <Var>pc</Var>
+                      <Var>last</Var>
+                    </args>
+                </Atom>
+              </then>
+            </Implies>
+          </formula>
+        </Forall>
+      </sentence>
+      <sentence>
+        <Forall>
+          <declare>
+            <Var>start</Var>
+          </declare>
+          <declare>
+            <Var>pc</Var>
+          </declare>
+          <declare>
+            <Var>last</Var>
+          </declare>
+          <declare>
+            <Var>p</Var>
+          </declare>
+          <formula>
+            <Implies>
+              <if>
+                <And>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>pc</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#first</Const>
+                        <Var>p</Var>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</Const>
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#nil</Const>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>start</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Var>p</Var>
+                        <Var>last</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                </And>
+              </if>
+              <then>
+                <Atom>
+                  <op>
+                    <Const type="&rif;local">checkChain</Const>
+                  </op>
+                    <args ordered="yes">
+                      <Var>start</Var>
+                      <Var>pc</Var>
+                      <Var>last</Var>
+                    </args>
+                </Atom>
+              </then>
+            </Implies>
+          </formula>
+        </Forall>
+      </sentence>
+      <sentence>
+        <Forall>
+          <declare>
+            <Var>x</Var>
+          </declare>
+          <declare>
+            <Var>y</Var>
+          </declare>
+          <declare>
+            <Var>c</Var>
+          </declare>
+          <declare>
+            <Var>u</Var>
+          </declare>
+          <formula>
+            <Implies>
+              <if>
+                <And>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>c</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/2002/07/owl#hasKey</Const>
+                        <Var>u</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>x</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Var>c</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>y</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Var>c</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;local">sameKey</Const>
+                      </op>
+                        <args ordered="yes">
+                          <Var>u</Var>
+                          <Var>x</Var>
+                          <Var>y</Var>
+                        </args>
+                    </Atom>
+                  </formula>
+                </And>
+              </if>
+              <then>
+                <Frame>
+                  <object>
+                    <Var>x</Var>
+                  </object>
+                  <slot ordered="yes">
+                    <Const type="&rif;iri">http://www.w3.org/2002/07/owl#sameAs</Const>
+                    <Var>y</Var>
+                  </slot>
+                </Frame>
+              </then>
+            </Implies>
+          </formula>
+        </Forall>
+      </sentence>
+      <sentence>
+        <Forall>
+          <declare>
+            <Var>u</Var>
+          </declare>
+          <declare>
+            <Var>x</Var>
+          </declare>
+          <declare>
+            <Var>y</Var>
+          </declare>
+          <formula>
+            <Implies>
+              <if>
+                <Exists>
+                  <declare>
+                    <Var>key</Var>
+                  </declare>
+                  <formula>
+                    <And>
+                      <formula>
+                        <Exists>
+                          <declare>
+                            <Var>v</Var>
+                          </declare>
+                          <formula>
+                            <And>
+                              <formula>
+                                <Frame>
+                                  <object>
+                                    <Var>x</Var>
+                                  </object>
+                                  <slot ordered="yes">
+                                    <Var>key</Var>
+                                    <Var>v</Var>
+                                  </slot>
+                                </Frame>
+                              </formula>
+                              <formula>
+                                <Frame>
+                                  <object>
+                                    <Var>y</Var>
+                                  </object>
+                                  <slot ordered="yes">
+                                    <Var>key</Var>
+                                    <Var>v</Var>
+                                  </slot>
+                                </Frame>
+                              </formula>
+                            </And>
+                          </formula>
+                        </Exists>
+                      </formula>
+                      <formula>
+                        <Exists>
+                          <declare>
+                            <Var>tl</Var>
+                          </declare>
+                          <formula>
+                            <And>
+                              <formula>
+                                <Frame>
+                                  <object>
+                                    <Var>u</Var>
+                                  </object>
+                                  <slot ordered="yes">
+                                    <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#first</Const>
+                                    <Var>key</Var>
+                                  </slot>
+                                  <slot ordered="yes">
+                                    <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</Const>
+                                    <Var>tl</Var>
+                                  </slot>
+                                </Frame>
+                              </formula>
+                              <formula>
+                                <Atom>
+                                  <op>
+                                    <Const type="&rif;local">sameKey</Const>
+                                  </op>
+                                  <args ordered="yes">
+                                    <Var>tl</Var>
+                                    <Var>x</Var>
+                                    <Var>y</Var>
+                                  </args>
+                                </Atom>
+                              </formula>
+                            </And>
+                          </formula>
+                        </Exists>
+                      </formula>
+                    </And>
+                  </formula>
+                </Exists>
+              </if>
+              <then>
+                <Atom>
+                  <op>
+                    <Const type="&rif;local">sameKey</Const>
+                  </op>
+                    <args ordered="yes">
+                      <Var>u</Var>
+                      <Var>x</Var>
+                      <Var>y</Var>
+                    </args>
+                </Atom>
+              </then>
+            </Implies>
+          </formula>
+        </Forall>
+      </sentence>
+      <sentence>
+        <Forall>
+          <declare>
+            <Var>u</Var>
+          </declare>
+          <declare>
+            <Var>x</Var>
+          </declare>
+          <declare>
+            <Var>y</Var>
+          </declare>
+          <formula>
+            <Implies>
+              <if>
+                <Exists>
+                  <declare>
+                    <Var>key</Var>
+                  </declare>
+                  <formula>
+                    <And>
+                      <formula>
+                        <Exists>
+                          <declare>
+                            <Var>v</Var>
+                          </declare>
+                          <formula>
+                            <And>
+                              <formula>
+                                <Frame>
+                                  <object>
+                                    <Var>x</Var>
+                                  </object>
+                                  <slot ordered="yes">
+                                    <Var>key</Var>
+                                    <Var>v</Var>
+                                  </slot>
+                                </Frame>
+                              </formula>
+                              <formula>
+                                <Frame>
+                                  <object>
+                                    <Var>y</Var>
+                                  </object>
+                                  <slot ordered="yes">
+                                    <Var>key</Var>
+                                    <Var>v</Var>
+                                  </slot>
+                                </Frame>
+                              </formula>
+                            </And>
+                          </formula>
+                        </Exists>
+                      </formula>
+                      <formula>
+                        <Frame>
+                          <object>
+                            <Var>u</Var>
+                          </object>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#first</Const>
+                            <Var>key</Var>
+                          </slot>
+                          <slot ordered="yes">
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</Const>
+                            <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#nil</Const>
+                          </slot>
+                        </Frame>
+                      </formula>
+                    </And>
+                  </formula>
+                </Exists>
+              </if>
+              <then>
+                <Atom>
+                  <op>
+                    <Const type="&rif;local">sameKey</Const>
+                  </op>
+                    <args ordered="yes">
+                      <Var>u</Var>
+                      <Var>x</Var>
+                      <Var>y</Var>
+                    </args>
+                </Atom>
+              </then>
+            </Implies>
+          </formula>
+        </Forall>
+      </sentence>
+      <sentence>
+        <Forall>
+          <declare>
+            <Var>y</Var>
+          </declare>
+          <declare>
+            <Var>c</Var>
+          </declare>
+          <declare>
+            <Var>l</Var>
+          </declare>
+          <formula>
+            <Implies>
+              <if>
+                <And>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>c</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/2002/07/owl#intersectionOf</Const>
+                        <Var>l</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;local">allTypes</Const>
+                      </op>
+                        <args ordered="yes">
+                          <Var>l</Var>
+                          <Var>y</Var>
+                        </args>
+                    </Atom>
+                  </formula>
+                </And>
+              </if>
+              <then>
+                <Frame>
+                  <object>
+                    <Var>y</Var>
+                  </object>
+                  <slot ordered="yes">
+                    <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                    <Var>c</Var>
+                  </slot>
+                </Frame>
+              </then>
+            </Implies>
+          </formula>
+        </Forall>
+      </sentence>
+      <sentence>
+        <Forall>
+          <declare>
+            <Var>l</Var>
+          </declare>
+          <declare>
+            <Var>y</Var>
+          </declare>
+          <declare>
+            <Var>ty</Var>
+          </declare>
+          <declare>
+            <Var>tl</Var>
+          </declare>
+          <formula>
+            <Implies>
+              <if>
+                <And>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>l</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#first</Const>
+                        <Var>ty</Var>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</Const>
+                        <Var>tl</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>y</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Var>ty</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <Atom>
+                      <op>
+                        <Const type="&rif;local">allTypes</Const>
+                      </op>
+                        <args ordered="yes">
+                          <Var>tl</Var>
+                          <Var>y</Var>
+                        </args>
+                    </Atom>
+                  </formula>
+                </And>
+              </if>
+              <then>
+                <Atom>
+                  <op>
+                    <Const type="&rif;local">allTypes</Const>
+                  </op>
+                    <args ordered="yes">
+                      <Var>l</Var>
+                      <Var>y</Var>
+                    </args>
+                </Atom>
+              </then>
+            </Implies>
+          </formula>
+        </Forall>
+      </sentence>
+      <sentence>
+        <Forall>
+          <declare>
+            <Var>l</Var>
+          </declare>
+          <declare>
+            <Var>y</Var>
+          </declare>
+          <declare>
+            <Var>ty</Var>
+          </declare>
+          <formula>
+            <Implies>
+              <if>
+                <And>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>l</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#first</Const>
+                        <Var>ty</Var>
+                      </slot>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</Const>
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#nil</Const>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>y</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Var>ty</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                </And>
+              </if>
+              <then>
+                <Atom>
+                  <op>
+                    <Const type="&rif;local">allTypes</Const>
+                  </op>
+                    <args ordered="yes">
+                      <Var>l</Var>
+                      <Var>y</Var>
+                    </args>
+                </Atom>
+              </then>
+            </Implies>
+          </formula>
+        </Forall>
+      </sentence>
+      <sentence>
+        <Forall>
+          <declare>
+            <Var>y</Var>
+          </declare>
+          <declare>
+            <Var>c</Var>
+          </declare>
+          <declare>
+            <Var>l</Var>
+          </declare>
+          <declare>
+            <Var>ci</Var>
+          </declare>
+          <formula>
+            <Implies>
+              <if>
+                <And>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>c</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/2002/07/owl#unionOf</Const>
+                        <Var>l</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <External>
+                     <content>
+                      <Atom>
+                          <op>
+                            <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#list-contains</Const>
+                          </op>
+                            <args ordered="yes">
+                              <Var>l</Var>
+                              <Var>ci</Var>
+                            </args>
+                      </Atom>
+                     </content>
+                    </External>
+                  </formula>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>y</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Var>ci</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                </And>
+              </if>
+              <then>
+                <Frame>
+                  <object>
+                    <Var>y</Var>
+                  </object>
+                  <slot ordered="yes">
+                    <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                    <Var>c</Var>
+                  </slot>
+                </Frame>
+              </then>
+            </Implies>
+          </formula>
+        </Forall>
+      </sentence>
+      <sentence>
+        <Forall>
+          <declare>
+            <Var>yi</Var>
+          </declare>
+          <declare>
+            <Var>c</Var>
+          </declare>
+          <declare>
+            <Var>l</Var>
+          </declare>
+          <formula>
+            <Implies>
+              <if>
+                <And>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>c</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/2002/07/owl#oneOf</Const>
+                        <Var>l</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <External>
+                     <content>
+                      <Atom>
+                          <op>
+                            <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#list-contains</Const>
+                          </op>
+                            <args ordered="yes">
+                              <Var>l</Var>
+                              <Var>yi</Var>
+                            </args>
+                      </Atom>
+                     </content>
+                    </External>
+                  </formula>
+                </And>
+              </if>
+              <then>
+                <Frame>
+                  <object>
+                    <Var>yi</Var>
+                  </object>
+                  <slot ordered="yes">
+                    <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                    <Var>c</Var>
+                  </slot>
+                </Frame>
+              </then>
+            </Implies>
+          </formula>
+        </Forall>
+      </sentence>
+      <sentence>
+        <Forall>
+          <declare>
+            <Var>y</Var>
+          </declare>
+          <declare>
+            <Var>c</Var>
+          </declare>
+          <declare>
+            <Var>ci</Var>
+          </declare>
+          <declare>
+            <Var>l</Var>
+          </declare>
+          <formula>
+            <Implies>
+              <if>
+                <And>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>c</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/2002/07/owl#intersectionOf</Const>
+                        <Var>l</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <External>
+                     <content>
+                      <Atom>
+                          <op>
+                            <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#list-contains</Const>
+                          </op>
+                            <args ordered="yes">
+                              <Var>l</Var>
+                              <Var>ci</Var>
+                            </args>
+                      </Atom>
+                     </content>
+                    </External>
+                  </formula>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>y</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                        <Var>c</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                </And>
+              </if>
+              <then>
+                <Frame>
+                  <object>
+                    <Var>y</Var>
+                  </object>
+                  <slot ordered="yes">
+                    <Const type="&rif;iri">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Const>
+                    <Var>ci</Var>
+                  </slot>
+                </Frame>
+              </then>
+            </Implies>
+          </formula>
+        </Forall>
+      </sentence>
+      <sentence>
+        <Forall>
+          <declare>
+            <Var>c</Var>
+          </declare>
+          <declare>
+            <Var>ci</Var>
+          </declare>
+          <declare>
+            <Var>l</Var>
+          </declare>
+          <formula>
+            <Implies>
+              <if>
+                <And>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>c</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/2002/07/owl#intersectionOf</Const>
+                        <Var>l</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <External>
+                     <content>
+                      <Atom>
+                          <op>
+                            <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#list-contains</Const>
+                          </op>
+                            <args ordered="yes">
+                              <Var>l</Var>
+                              <Var>ci</Var>
+                            </args>
+                      </Atom>
+                     </content>
+                    </External>
+                  </formula>
+                </And>
+              </if>
+              <then>
+                <Frame>
+                  <object>
+                    <Var>c</Var>
+                  </object>
+                  <slot ordered="yes">
+                    <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#subClassOf</Const>
+                    <Var>ci</Var>
+                  </slot>
+                </Frame>
+              </then>
+            </Implies>
+          </formula>
+        </Forall>
+      </sentence>
+      <sentence>
+        <Forall>
+          <declare>
+            <Var>c</Var>
+          </declare>
+          <declare>
+            <Var>ci</Var>
+          </declare>
+          <declare>
+            <Var>l</Var>
+          </declare>
+          <formula>
+            <Implies>
+              <if>
+                <And>
+                  <formula>
+                    <Frame>
+                      <object>
+                        <Var>c</Var>
+                      </object>
+                      <slot ordered="yes">
+                        <Const type="&rif;iri">http://www.w3.org/2002/07/owl#unionOf</Const>
+                        <Var>l</Var>
+                      </slot>
+                    </Frame>
+                  </formula>
+                  <formula>
+                    <External>
+                     <content>
+                      <Atom>
+                          <op>
+                            <Const type="&rif;iri">http://www.w3.org/2007/rif-builtin-predicate#list-contains</Const>
+                          </op>
+                            <args ordered="yes">
+                              <Var>l</Var>
+                              <Var>ci</Var>
+                            </args>
+                      </Atom>
+                     </content>
+                    </External>
+                  </formula>
+                </And>
+              </if>
+              <then>
+                <Frame>
+                  <object>
+                    <Var>ci</Var>
+                  </object>
+                  <slot ordered="yes">
+                    <Const type="&rif;iri">http://www.w3.org/2000/01/rdf-schema#subClassOf</Const>
+                    <Var>c</Var>
+                  </slot>
+                </Frame>
+              </then>
+            </Implies>
+          </formula>
+        </Forall>
+      </sentence>
+    </Group>
+  </payload>
+</Document>
